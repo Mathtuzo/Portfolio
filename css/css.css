@@ -756,6 +756,11 @@ justify-content: center;*/
         bottom: 2.8rem;
         left: -15rem;
     }
+@media (max-width: 560px) {
+        .contact-message {
+            left: auto;
+        }
+    }
     
     .color-red {
         color: rgb(105, 12, 12);
