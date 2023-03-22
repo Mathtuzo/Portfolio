@@ -135,6 +135,9 @@ nav.sticky {
   body {
     overflow: hidden;
 }
+    #NavBar {
+  height: 2px;
+}
   .nav-menu {
       z-index: 999;
       position: fixed;
