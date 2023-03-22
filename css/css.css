@@ -202,7 +202,8 @@
         font-family: 'Mulish', sans-serif;
         font-family: 'Work Sans', sans-serif;
     }
-    
+#presentation p{
+    z-index:500;}
     #presentation a {
         color: blue;
     }
