@@ -27,6 +27,7 @@
 
 @media (max-width: 450px) {
     #header h1 {
+        top: 30%;
         font-size: 80px;
     }
 }
