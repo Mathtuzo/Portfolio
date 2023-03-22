@@ -154,7 +154,7 @@ nav.sticky {
       /* coulissement */
       transition: transform 0.5s ease-in;
       width: 50vw;
-      height: 100%;
+      height: 70%;
   }
   .nav-menu li {
       opacity: 0;
