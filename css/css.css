@@ -473,7 +473,7 @@
         display: block;
         }
     }
- @media (max-width: 750px) {
+ @media (max-width: 300px) {
         .real-button {
             font-size:18px;
         }
