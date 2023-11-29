@@ -453,10 +453,10 @@
     }
      @media (max-width: 750px) {
         .real-button {
-            font-size: 20px;
+            font-size: 24px;
         }
          .real-button:hover {
-             font-size: 23.5px;
+             font-size: 26.5px;
          }
     }
     .projets_global {
