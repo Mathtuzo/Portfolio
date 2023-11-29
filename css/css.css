@@ -451,7 +451,14 @@
         font-size: 37px;
         border: 2px solid #1f69ec;
     }
-    
+     @media (max-width: 750px) {
+        .real-button {
+            font-size: 20px;
+        }
+         .real-button:hover {
+             font-size: 23.5px;
+         }
+    }
     .projets_global {
         overflow: initial;
         margin-top: 30px;
