@@ -10,14 +10,33 @@
 }
 
 #header h1 {
-    position: relative;
+    position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     font-size: 102px;
+    letter-spacing: 0.05em;
     font-family: 'Dancing Script', cursive;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Phudu', cursive;
+    /* Si vous avez plusieurs valeurs pour font-family, elles doivent être séparées par une virgule */
+    font-family: 'Manrope', 'Phudu', 'Roboto', sans-serif; 
     font-family: 'Roboto', sans-serif;
 }
+#header h1 span{
+    color:aliceblue;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+ }
+#header h1:hover span{
+    color:rgb(0, 60, 255); ;
+    text-shadow: 0 0 2px rgb(0, 60, 255),
+    0 0 7px rgb(0, 60, 255),0 0 10px rgb(0, 60, 255);
+} 
+
+
 
 @media (max-width: 650px) {
     #header h1 {

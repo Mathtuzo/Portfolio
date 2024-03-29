@@ -34,7 +34,7 @@ function NavFunction() {
     navbar.classList.remove("sticky");
   }
 
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  if (document.body.scrollTop > 630 || document.documentElement.scrollTop > 630) {
       
     document.getElementById("scroll-up_nav").style.display = "initial";
     document.querySelector(":root").style.setProperty('--nav-color','blue') ;
