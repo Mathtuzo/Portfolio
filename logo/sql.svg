@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="sqlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="32" cy="16" rx="26" ry="10" fill="url(#sqlGrad)"/>
+  <path d="M58 24C58 29.52 46.36 34 32 34C17.64 34 6 29.52 6 24V32C6 37.52 17.64 42 32 42C46.36 42 58 37.52 58 32V24Z" fill="url(#sqlGrad)" opacity="0.85"/>
+  <path d="M58 38C58 43.52 46.36 48 32 48C17.64 48 6 43.52 6 38V48C6 53.52 17.64 58 32 58C46.36 58 58 53.52 58 48V38Z" fill="url(#sqlGrad)" opacity="0.7"/>
+</svg>

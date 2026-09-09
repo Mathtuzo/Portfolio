@@ -5,782 +5,1103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="description" content="Portfolio de Mathis Carré, Développeur Web et Webdesigner. Découvrez mes projets de développement web, d'intégration responsive et de design d'interfaces UI/UX.">
+    <meta name="keywords" content="Mathis Carré, Développeur Web, Webdesigner, Portfolio, Frontend, PHP, JavaScript, CSS, HTML, UI UX Design">
+    <meta name="author" content="Mathis Carré">
+
+    <!-- Open Graph / Réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mathis Carré | Développeur Web & Webdesigner">
+    <meta property="og:description" content="Découvrez mes créations web, compétences techniques et projets en développement et design numérique.">
+    <meta property="og:image" content="image/moi.png">
+
+    <title>Mathis Carré | Développeur Web & Webdesigner</title>
+
+    <!-- Polices Google Fonts modernes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icônes Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/css.css">
+
+    <!-- Feuilles de style -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-    <title>Portfolio Matis Carré</title>
-
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
-<div class="cursor"></div>
 <body>
-    
+    <!-- Curseur interactif fluide -->
+    <div class="cursor" id="custom-cursor"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
 
+    <!-- Arrière-plan dynamique / Glow orbs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
 
-    <header id="header">
-        <div class="bubbles">
-            <span style="--i:9"></span>
-            <span style="--i:12"></span>
-            <span style="--i:24"></span>
-            <span style="--i:11"></span>
-            <span style="--i:14"></span>
-            <span style="--i:18"></span>
-            <span style="--i:16"></span>
-            <span style="--i:19"></span>
-            <span style="--i:20"></span>
-            <span style="--i:22"></span>
-            <span style="--i:25"></span>
-            <span style="--i:18"></span>
-            <span style="--i:21"></span>
-            <span style="--i:15"></span>
-            <span style="--i:13"></span>
-            <span style="--i:26"></span>
-            <span style="--i:17"></span>
-            <span style="--i:13"></span>
-            <span style="--i:28"></span>
-            <span style="--i:10"></span>
-            <span style="--i:12"></span>
-            <span style="--i:24"></span>
-            <span style="--i:11"></span>
-            <span style="--i:13"></span>
-            <span style="--i:18"></span>
-            <span style="--i:16"></span>
-            <span style="--i:19"></span>
-            <span style="--i:20"></span>
-            <span style="--i:22"></span>
-            <span style="--i:25"></span>
-            <span style="--i:18"></span>
-            <span style="--i:21"></span>
-            <span style="--i:15"></span>
-            <span style="--i:10"></span>
-            <span style="--i:26"></span>
-            <span style="--i:17"></span>
-            <span style="--i:13"></span>
-            <span style="--i:28"></span>
-            <span style="--i:11"></span>
-            <span style="--i:12"></span>
-            <span style="--i:24"></span>
-            <span style="--i:13"></span>
-            <span style="--i:10"></span>
-            <span style="--i:18"></span>
-            <span style="--i:16"></span>
-            <span style="--i:19"></span>
-            <span style="--i:20"></span>
-            <span style="--i:22"></span>
-            <span style="--i:25"></span>
-            <span style="--i:18"></span>
-            <span style="--i:21"></span>
-            <span style="--i:15"></span>
-            <span style="--i:13"></span>
-            <span style="--i:26"></span>
-            <span style="--i:17"></span>
-            <span style="--i:13"></span>
-            <span style="--i:28"></span>
+    <!-- ==================== HEADER / HERO ==================== -->
+    <header id="header" class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Disponible pour de nouveaux projets</span>
+            </div>
+
+            <h1 class="hero-title">
+                Mathis <span class="gradient-text">Carré</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Développeur Web <span class="separator-dot">•</span> Webdesigner
+            </p>
+
+            <p class="hero-description">
+                Passionné par la fusion entre développement technique rigoureux et design d'interface percutant, je conçois des expériences web modernes, intuitives et performantes.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#realisation" class="btn btn-primary">
+                    <span>Explorer mes projets</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="Mathis_Carre.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="ri-file-download-line"></i>
+                    <span>Télécharger mon CV</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">+7</span>
+                    <span class="stat-label">Projets Réalisés</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">BTS SIO</span>
+                    <span class="stat-label">Diplômé Développeur (SLAM)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">Polyvalent</span>
+                    <span class="stat-label">Dév. Web & UI/UX Design</span>
+                </div>
+            </div>
         </div>
 
-        <h1 class="tete">Mathis Carré</h1>
-        <a href="#presentation">
-            <div class="scroll-down"></div>
+        <a href="#presentation" class="scroll-indicator" aria-label="Défiler vers la présentation">
+            <span class="mouse-icon">
+                <span class="mouse-wheel"></span>
+            </span>
+            <span class="scroll-text">Défiler vers le bas</span>
         </a>
-        <script>
-            let text = document.querySelector('.tete');
-            text.innerHTML = text.innerText.split('').map((letters, i)=> 
-            `<span style="transition-delay:${i * 90}ms; filter:hue-rotate(${i * 2}deg)">${letters}</span>`).join('');            
-     
-           
-
-
-
-
-
-
-        </script>
-
     </header>
 
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav id="NavBar" class="navbar">
+        <div class="nav-container">
+            <a href="#header" class="nav-logo">
+                <span class="logo-accent">&lt;</span>MC<span class="logo-accent">/&gt;</span>
+            </a>
 
-
-    <div>
-
-        <nav id="NavBar">
             <ul id="menu" class="nav-menu">
-                <li><a href="#header">home</a></li>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#competence">Compétences</a></li>
-                <li><a href="#realisation">Réalisation</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="Mathis_Carre.pdf" target="_blank">CV</a></li>
+                <li><a href="#header" class="nav-link active">Accueil</a></li>
+                <li><a href="#presentation" class="nav-link">Présentation</a></li>
+                <li><a href="#competence" class="nav-link">Compétences</a></li>
+                <li><a href="#realisation" class="nav-link">Réalisations</a></li>
+                <li><a href="#Contact" class="nav-link">Contact</a></li>
+                <li class="nav-cv-item">
+                    <a href="Mathis_Carre.pdf" target="_blank" rel="noopener noreferrer" class="btn-cv-nav">
+                        <i class="ri-file-pdf-line"></i> CV
+                    </a>
+                </li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
 
-            </div>
-        </nav>
-
-    </div>
-
-    <nav class="scroll-up_nav" id="scroll-up_nav">
-        <a class="scroll-up" id="scroll-up" href="#header"><i class="ri-arrow-up-line"></i></a>
+            <button class="burger" id="burger-btn" aria-label="Ouvrir le menu de navigation">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </button>
+        </div>
     </nav>
 
+    <!-- Bouton de retour en haut -->
+    <a href="#header" class="scroll-up-btn" id="scroll-up_nav" aria-label="Remonter en haut de page">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
-    <section class="section">
+    <!-- ==================== CONTENU PRINCIPAL ==================== -->
+    <main class="main-content">
 
-        <article id="presentation">
-            <div class="article-head">
-                <h6>___________</h6>
-                <div class="titre-article">
-                    <div>
-                        <h6 class="head-titre">Présentation </h6>
-                    </div>
-                    <div>
-                        <h2>QUI SUIS-JE ?</h2>
-                    </div>
-                </div>
-
-
-
-                <h6 class="barre">___________</h6>
-
+        <!-- ==================== SECTION PRÉSENTATION ==================== -->
+        <section id="presentation" class="section">
+            <div class="section-header">
+                <span class="section-tag">À PROPOS</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
+                <div class="section-divider"></div>
             </div>
 
-            <img class="moi" src="image/moi.png" alt="moi">
-
-            <p class="text">Je suis Mathis Carré, 21 ans, ancien étudiant en BTS Services Informatiques aux Organisations, option Conception et Développement d'Applications, et désormais en Bachelor Webdesign.
-                J'ai pour projet de travailler dans une agence web.
-                J'ai réalisé divers <a href="#realisation">projets</a> dans les domaines scolaire et personnel, développant ainsi des compétences en HTML, CSS, JavaScript, PHP, ainsi que sur des outils tels que Figma et Photoshop.
-
-            </p>
-            <p class="text">
-                Si vous souhaitez voir mon cv c'est par <a href="Mathis_Carre.pdf" target="_blank">ici</a>
-
-
-            </p>
-
-        </article>
-
-
-        <article id="competence">
-            <div class="article-head">
-                <h6>___________</h6>
-                <div class="titre-article">
-                    <div>
-                        <h6 class="head-titre">compétences</h6>
+            <div class="presentation-content">
+                <div class="presentation-avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-frame">
+                        <img src="image/moi.png" alt="Mathis Carré - Développeur Web et Webdesigner" class="avatar-img">
                     </div>
-                    <div>
-                        <h2>MES COMPÉTENCES</h2>
+                    <div class="avatar-badge">
+                        <i class="ri-code-s-slash-line"></i>
+                        <span>Développeur Web & UI</span>
                     </div>
                 </div>
 
+                <div class="presentation-text-block">
+                    <h3 class="presentation-headline">
+                        Mathis Carré, <span class="highlight">21 ans</span>
+                    </h3>
+                    <p class="presentation-lead">
+                        Titulaire d'un <strong>BTS Services Informatiques aux Organisations (option SLAM - Solutions Logicielles et Applications Métiers)</strong>.
+                    </p>
+                    <p class="presentation-body">
+                        Après l'obtention de mon BTS SIO, j'ai poursuivi mon parcours à travers des formations en <strong>Bachelor Webdesign</strong> ainsi qu'en <strong>Concepteur Développeur d'Applications (CDA)</strong>. Bien que ces passages n'aient pas été concluants en termes de validation de diplôme, ils se sont révélés particulièrement formateurs : ils m'ont permis d'élargir mes compétences en développement logiciel tout en affirmant ma sensibilité pour le design d'interface et l'expérience utilisateur (UI/UX).
+                    </p>
+                    <p class="presentation-body">
+                        Aujourd'hui, fort de ce bagage technique et créatif, je me concentre pleinement sur la pratique et la réalisation de projets web concrets. Mon objectif est d'intégrer une <strong>agence web dynamique</strong> ou une équipe technique pour mettre mon engagement, ma rigueur et ma polyvalence au service de solutions numériques performantes.
+                    </p>
+                    <p class="presentation-body">
+                        Au cours de mes projets académiques et professionnels, j'ai développé des compétences solides en <strong>HTML5, CSS3, JavaScript, PHP</strong>, ainsi que sur des outils de conception majeurs tels que <strong>Figma, Photoshop et Premiere Pro</strong>.
+                    </p>
 
-                <h6 class="barre">___________</h6>
+                    <div class="presentation-highlights">
+                        <div class="highlight-item">
+                            <i class="ri-code-box-line"></i>
+                            <div>
+                                <h4>Développement Web</h4>
+                                <p>Code propre, sémantique et responsive</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="ri-palette-line"></i>
+                            <div>
+                                <h4>Design UI / UX</h4>
+                                <p>Maquettes modernes et expérience soignée</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="ri-database-2-line"></i>
+                            <div>
+                                <h4>Back-End & CMS</h4>
+                                <p>Gestion de données MySQL et WordPress</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="presentation-cta">
+                        <a href="Mathis_Carre.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="ri-file-text-line"></i>
+                            <span>Consulter mon CV complet</span>
+                        </a>
+                        <a href="#Contact" class="btn btn-secondary">
+                            <i class="ri-mail-line"></i>
+                            <span>Me contacter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ==================== SECTION COMPÉTENCES ==================== -->
+        <section id="competence" class="section">
+            <div class="section-header">
+                <span class="section-tag">SAVOIR-FAIRE</span>
+                <h2 class="section-title">Mes Compétences</h2>
+                <div class="section-divider"></div>
             </div>
 
+            <!-- Grille des compétences par catégories -->
+            <div class="skills-categories">
 
-
-            <div id="skill_global">
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/html-1.svg" alt="html">
-                        <p class="skilltexte">
-                            HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer et structurer le contenu d'une page web. Il permet de définir la structure logique et les éléments visuels d'une page en utilisant des balises et des attributs. HTML
-                            est interprété par les navigateurs web pour afficher le contenu d'une page de manière cohérente et compréhensible pour les utilisateurs.</p>
-                    </div>
-                    <h3>HTML</h3>
-                    <span class="skill_Subtitle">Confirmé</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/css-3.svg" alt="html">
-                        <p class="skilltexte">CSS (Cascading Style Sheets) est un langage de feuilles de style utilisé pour contrôler l'apparence visuelle et la mise en page des éléments HTML sur une page web. Il permet de définir des règles de style telles que les couleurs,
-                            les polices, les marges, les espacements et les animations pour personnaliser l'aspect et le comportement des éléments HTML. </p>
-                    </div>
-                    <h3>CSS</h3>
-                    <span class="skill_Subtitle">Confirmé</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/javascript-1.svg" alt="html">
-                        <p class="skilltexte">
-                            JavaScript (JS) est un langage de programmation de scripts principalement utilisé côté client pour ajouter de l'interactivité et des fonctionnalités dynamiques aux pages web. Il permet de manipuler le contenu HTML, de réagir aux événements de l'utilisateur
-                            , de modifier le style des éléments HTML, de valider les données des formulaires, de créer des animations et bien plus encore. </p>
-                    </div>
-                    <h3>Javascript</h3>
-                    <span class="skill_Subtitle">Intermédiaire</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg" id="phpskill">
-                        <img src="logo/php-1.svg" alt="html">
-                        <p class="skilltexte">
-                            PHP (Hypertext Preprocessor) est un langage de script côté serveur utilisé pour développer des applications web dynamiques et interactives. Il est largement utilisé pour générer du contenu HTML dynamique, interagir avec les bases de données, gérer les
-                            sessions utilisateur, créer des formulaires web, envoyer et recevoir des cookies, et autre. PHP est souvent intégré dans des fichiers HTML pour permettre la création de pages web dynamiques pour l'utilisateur. </p>
-                        <!-- <p><br> <br><br><br><br<br><br><br></p> -->
-                    </div>
-                    <h3>PHP</h3>
-                    <span class="skill_Subtitle">Amateur</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/c--4.svg" alt="html">
-                        <p class="skilltexte">
-                            C# ("C sharp") est un langage de programmation orienté objet développé par Microsoft. Il est principalement utilisé pour développer des applications sur la plateforme Microsoft .NET. C# est polyvalent et peut être utilisé pour développer une variété d'applications,
-                            . Il offre des fonctionnalités avancées telles que la gestion automatique de la mémoire, la programmation orientée objet, la gestion des exceptions, et le support de la programmation asynchrone. C# est un langage populaire
-                            utilisé dans l'industrie du logiciel.</p>
-                    </div>
-                    <h3>C#</h3>
-                    <span class="skill_Subtitle">Amateur</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/c.svg" alt="html">
-                        <p class="skilltexte">
-                            Le C++ est un langage de programmation de haut niveau qui offre une combinaison unique de fonctionnalités de programmation orientée objet et procédurale. Il est souvent utilisé pour développer des logiciels nécessitant une grande performance, tels que
-                            les jeux vidéo, les logiciels système, les applications graphiques et bien d'autres. Sa syntaxe flexible et sa richesse en fonctionnalités en font un choix populaire parmi les développeurs pour un large éventail d'applications.</p>
-                    </div>
-                    <h3>C++</h3>
-                    <span class="skill_Subtitle">Débutant</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/photoshop-cc-4.svg" alt="html">
-                        <p class="skilltexte">Photoshop est un logiciel de création et de retouche d'images, largement utilisé par les designers, photographes et professionnels du graphisme. Avec ses outils avancés et ses fonctionnalités de pointe, il permet de manipuler et
-                            d'embellir les images numériques pour une multitude d'applications, allant du design graphique à la retouche photo en passant par la création artistique.</p>
-                    </div>
-                    <h3>Photoshop</h3>
-                    <span class="skill_Subtitle">Intermédiaire</span>
-                </div>
-                <div class="skill">
-                    <div class="skillImg">
-                        <img src="logo/premiere-cc.svg" alt="html">
-                        <p class="skilltexte">Adobe Premiere est un logiciel de montage vidéo professionnel largement utilisé par les cinéastes, les vidéastes et les professionnels de l'édition vidéo. Il offre une gamme complète d'outils de montage, d'effets spéciaux, de correction
-                            des couleurs, de sonorisation et d'autres fonctionnalités avancées pour créer des productions vidéo de haute qualité. </p>
-                    </div>
-                    <h3>Premiere-Pro</h3>
-                    <span class="skill_Subtitle">Amateur</span>
-                </div>
-
-            </div>
-        </article>
-
-
-        <article id="realisation">
-            <div class="article-head">
-                <h6>___________</h6>
-                <div class="titre-article">
-                    <div>
-                        <h6 class="head-titre">mes réalisations </h6>
-                    </div>
-
-                    <div>
-                        <h2>PORTFOLIO</h2>
-                    </div>
-                </div>
-                <h6 class="barre">___________</h6>
-
-            </div>
-
-            <div class="real_container">
-                <button class="real-button" onclick="openProfessionel()">projet <u class="text_buton_real1">professionnel</u><u class="text_buton_real2">pro</u></button>
-                <button class="real-button" onclick="openEtude()">projet d'étude</button>
-
-                <div id="etude" class="projets_global swiper">
-                    <div class="swiper-wrapper">
-
-                        <!-- //////////////////////projet1 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj1.PNG" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">HTML/CSS/JS</span>
-                                <h1 class="projet_title">Site web exposition Gaudi</h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openGaudi()">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
+                <!-- Catégorie 1 : Développement Frontend & Frameworks -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">
+                        <i class="ri-code-s-slash-line"></i>
+                        <span>Développement Web & Frameworks</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/html-1.svg" alt="Logo HTML5" class="skill-icon">
                             </div>
-                        </div>
-                        <!-- ////////////////////////projet2 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj2.PNG" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">HTML/CSS/JS</span>
-                                <h1 class="projet_title">Site web exposition Alain Le Foll</h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openFoll()">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- ////////////////////////projet3 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj3.PNG" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">HTML/CSS</span>
-                                <h1 class="projet_title"> Juste prix en langage web </h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openJP()">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- ////////////////////////projet4 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj4.PNG" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">PHP/CSS/HTML</span>
-                                <h1 class="projet_title">Site web dynamique </h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openSiteDyn()">  
-                                    voir le site <i class="ri-arrow-right-line"></i></button>
-                            </div>
-                        </div>
-                        <!-- //////////////////////projet5 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj6.png" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">PHP/CSS/HTML/JS</span>
-                                <h1 class="projet_title">Site web dynamique</h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openEco()">
-                                    <!-- mettre le lein -->
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- //////////////////////projet6 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj7.png" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">PHP/CSS/HTML</span>
-                                <h1 class="projet_title">Site web dynamique</h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openMuse()">
-                                    <!-- mettre le lein -->
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!-- ////bouton//// -->
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-s-line"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-s-line"></i>
-                    </div>
-                    <!-- ////pagination//// -->
-                    <div class="swiper-pagination">
-
-                    </div>
-
-
-
-                    <div class="demo-container">
-                        <div class="demo" id="demo-leFoll">
-                            <button class="demo-close" id="close-demo-leFoll" onclick="getElementById('demo-leFoll').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-                                <img src="image/demo/lefollDemo.gif" alt="">
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-                                <p>
-                                    Ce site est un projet scolaire qui visait à créer un site statique responsive sur une exposition d'Alain le Foll. Composé de plusieurs rubriques dont une sur l exposition, d'une biographie,d'une critique, d'une rubrique oeuvre avec 6 images de tableaux
-                                    aléatoire de l'artiste, ainsi que des informations sur l'exposition et ses tarifs. L'header est simplement une image tirée d'une oeuvre de l'artiste avec un titre par-dessus La navigation est une navigation collée qui
-                                    reste en haut de la page pendant toute la navigation du site. La rubrique exposition contient une vidéo ainsi qu'une courte présentation de l'exposition de l'artiste. La biographie contient comme si prétendant écrit
-                                    une biographie avec une image de l'homme qu'elle décrit. La critique contient une vidéo sur l'exposition ainsi qu'une courte critique. La rubrique oeuvre contient un diporama d image avec un panorama de 6 images aleatoires
-                                    sur 12 disponible. La rubrique rejoignez-nous rassemblent différentes infos sur l'ouverture les tarifs et la localisation de l'exposition Le footer contient un lien vers les sites de l'exposition
-                                    <br>
-                                    <br>Ce site est conçu en HTML, CSS, Javascript sur une page unique .Le Javascript était utilisé pour le diaporama et le panorama d'images.
-
-                                </p>
-                            </div>
-
-                        </div>
-                        <!-- ////////////////////////////////////////////////////////////////////////// -->
-                        <div class="demo" id="demo-leFoll">
-                            <button class="demo-close" id="close-demo-leFoll" onclick="getElementById('demo-leFoll').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-                                <img src="image/demo/lefollDemo.gif" alt="">
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-                                <p>
-                                    Ce site est un projet scolaire qui visait à créer un site statique responsive sur une exposition d'Alain le Foll. Composé de plusieurs rubriques dont une sur l exposition, d'une biographie,d'une critique, d'une rubrique oeuvre avec 6 images de tableaux
-                                    aléatoire de l'artiste, ainsi que des informations sur l'exposition et ses tarifs. L'header est simplement une image tirée d'une oeuvre de l'artiste avec un titre par-dessus La navigation est une navigation collée qui
-                                    reste en haut de la page pendant toute la navigation du site. La rubrique exposition contient une vidéo ainsi qu'une courte présentation de l'exposition de l'artiste. La biographie contient comme si prétendant écrit
-                                    une biographie avec une image de l'homme qu'elle décrit. La critique contient une vidéo sur l'exposition ainsi qu'une courte critique. La rubrique oeuvre contient un diporama d image avec un panorama de 6 images aleatoires
-                                    sur 12 disponible. La rubrique rejoignez-nous rassemblent différentes infos sur l'ouverture les tarifs et la localisation de l'exposition Le footer contient un lien vers les sites de l'exposition
-                                    <br>
-                                    <br>Ce site est conçu en HTML, CSS, Javascript sur une page unique .Le Javascript était utilisé pour le diaporama et le panorama d'images.
-
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="demo" id="demo-leFoll">
-                            <button class="demo-close" id="close-demo-leFoll" onclick="getElementById('demo-leFoll').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-                                <img src="image/demo/lefollDemo.gif" alt="">
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-                                <p>
-                                    Ce site est un projet scolaire qui visait à créer un site statique responsive sur une exposition d'Alain le Foll. Composé de plusieurs rubriques dont une sur l exposition, d'une biographie,d'une critique, d'une rubrique oeuvre avec 6 images de tableaux
-                                    aléatoire de l'artiste, ainsi que des informations sur l'exposition et ses tarifs. L'header est simplement une image tirée d'une oeuvre de l'artiste avec un titre par-dessus La navigation est une navigation collée qui
-                                    reste en haut de la page pendant toute la navigation du site. La rubrique exposition contient une vidéo ainsi qu'une courte présentation de l'exposition de l'artiste. La biographie contient comme si prétendant écrit
-                                    une biographie avec une image de l'homme qu'elle décrit. La critique contient une vidéo sur l'exposition ainsi qu'une courte critique. La rubrique oeuvre contient un diporama d image avec un panorama de 6 images aleatoires
-                                    sur 12 disponible. La rubrique rejoignez-nous rassemblent différentes infos sur l'ouverture les tarifs et la localisation de l'exposition Le footer contient un lien vers les sites de l'exposition
-                                    <br>
-                                    <br>Ce site est conçu en HTML, CSS, Javascript sur une page unique .Le Javascript était utilisé pour le diaporama et le panorama d'images.
-
-                                </p>
-                            </div>
-
-                        </div>
-                        <!-- ////////////////////////////////////////////////////////////////////////////////// -->
-                        <div class="demo" id="demo-Gaodi">
-                            <button class="demo-close" id="close-demo-Gaodi" onclick="getElementById('demo-Gaodi').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-                                <img src="image/demo/gaudiDemo.gif" alt="">
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-
-                                <p>Ce site est un projet scolaire qui visait à créer un site statique responsive sur une exposition d'Antoni Gaudi. Composé d'un systeme de cookies et de plusieurs rubriques dont d'une biographie, d'une rubrique oeuvre avec
-                                    9 images d'ouvrages aléatoire de l'artiste, la lettre commissaire ainsi que des informations sur l'exposition. Le header contient d une video en arrire plan et d un bouton de scroll vers le bas sans compter le titre.
-                                    La navigation rétrécie passer l'header pour donner plus de place aux informations, elle passe d'une navigation rétrécissante à une navigation en burger à partir de 750 pixels de largeur, un bouton apparaissant après
-                                    un certain niveau permet de remonter à la tete de la page. La rubrique biographie et composé d'une photo de l'artiste avec à coter une brève biographie, en dessous se trouve plusieurs paragraphes décrivants qui il étaient,
-                                    son parcours étudiant et professionnel ainsi que sa mort, chaque rubrique peut en afficher plus en détaille avec le bouton plus au-dessus de lui. La rubrique oeuvre contient une vidéo sur l'exposition gaudie avec en
-                                    dessous 9 oeuvres de Gaudí qui s'affiche aléatoirement sur les 18 disponibles. Ensuite vient la lettre commissaire qui est un explicative de pourquoi l'exposition. Et vient après la section exposition où l'on retrouve
-                                    diverses informations sur celle-ci comme un carte pour googler map, le different tarif et un lien vers la billetterie. Le footer lui est composé de mes coordonnées personnelles, d'une navigation et la mention légale.
-                                    <br/>
-                                    <br/>Ce site est conçu en HTML, CSS, Javascript sur une page unique .Le Javascript était surtout utilisé pour les images, et les changement et modification de classe pour les boutons et la navigation.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- ////////////////////////////////////////////////////////////////////////////////// -->
-                        <div class="demo" id="demoMuse">
-                            <button class="demo-close" id="close-demo-Muse" onclick="getElementById('demoMuse').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-                                <img src="image/demo/museDemo.gif" alt="">
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-
-                                <p>Ce site est un projet scolaire visant a gérer les entré et sortie de visiteur dans un musée via un site local. La page d'accueil est une page 
-                                    affrichant tous les visiteurs présents dans le musé repérable grâce a leur ticket n'ayant pas encore  d'heure de sortie, la page entrée ticket 
-                                    est une page permettant de rentrer le nouveau visiteur en les injectant dans la base de sonné , la page sortie permet de faire sortir le visiteur
-                                     en lui rajoutant une date et heure de fin et enfin la page statistique permettant de voir le statistiques en pourcentage des nouble de ticekt.
-                                    Tout ceci est gérer en PHP et afficher en HTML et en CSS
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">HTML5</h4>
+                                    <span class="skill-level-badge level-confirmed">Avancé</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Balisage sémantique, structuration de pages accessibles, conformité aux standards W3C et optimisation SEO.
                                 </p>
                             </div>
                         </div>
 
-
-
-                        <div class="demo" id="demo-siteDynamique">
-                            <button class="demo-close" id="close-demo-siteDynamique" onclick="getElementById('demo-siteDynamique').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-                                <img src="image/demo/dynamiqueDemo.gif" alt="">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/css-3.svg" alt="Logo CSS3" class="skill-icon">
                             </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-                                <p>
-                                    Ce site est un projet scolaire qui visait à créer un site dynamiquee responsive.il fonctionne avec un système d'oeuvre avec une description et des dates qui puent se faire rajouter avec une autre page, le site devait aussi gererer les client fesant en
-                                    sorte de ne pas en avoir plus de 50 dans le musée
-
-                                    <br/>La page principale affiche une image un titre des dates et une description pour toutes les oeuvres, la page "ajouter oeuvre" sert à implémenter de nouvelle oeuvres dans la base de données. Il y a aussi une gestion
-                                    de client avec la page "Entrer client" et la page "sortie client"qui sert à faire entrer et sortir les clients dans les musées, avec les données client nous avons aussi fait des statiques disponibles dans la page statistique.
-                                    <br/>
-                                    <br/>Les sites sont composés de 5 pages accessibles en grande partie en Php avec un peu de HTML et de CSS avec une base de données en SQL.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="demo" id="JP-Demo">
-                            <button class="demo-close" id="close-JP-Demo" onclick="getElementById('JP-Demo').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-
-                                <img src="image/demo/justeprixDemo.gif" alt="">
-
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-
-                                <p>
-                                    Ce site est un projet scolaire qui visait à créer juste un prix a l'aide du Javascript.Il est composé de plusieurs modes de jeux.
-                                    <br/>les modes de jeux se divisent ne 2 catégories le premier est un mode de jeux en solo avec 3 niveaux different qui different selon le nombre d'essai et le nombre maximum pouvant être atteint .Le second est un mode
-                                    multijoueur(2 joueurs) la première sous catégorie se défini par un joueur qui choisit le nombre à trouver et l'autre qui le trouve la deuxième est un versus ou tour à Tours les 2 joueurs essaye dé d'écrire le nombre
-                                    à trouver.
-                                    <br/>
-                                    <br/> l'aparence est faite en HTML CSS le Javascript sert grace a divers fontions à faire le juste prix
-                                </p>
-                            </div>
-                        </div>
-                        <div class="demo" id="Eco-Demo">
-                            <button class="demo-close" id="close-Eco-Demo" onclick="getElementById('Eco-Demo').style.display = 'none'"><i class="ri-close-line"></i></button>
-                            <div class="demo-img">
-
-                                <img src="image/demo/ecoDemo.gif" alt="">
-
-                            </div>
-                            <div class="demo-text">
-                                <a href="">voir le site</a>
-
-                                <p>
-                                    Ce site est un projet scolaire qui visait à créer une application web en php html css pour commander un véhicule a uen agence .
-                                    <br/>le projet ce concentre sur une base de donnée ou l'on puise toutes les informations des véhicules et dans laquel on implemente celle du client
-                                    <br/>l application nous force a nous crer un compte ou nous connecter pour acceder a la page de commande une fois fais cette dernière est enregistré
-                                    <br/> dans une table de la base de donnée supprimant un véhicule disponible, une fois la commande faite un récapitulatif vous est affiché
-                                    <br/> l'aparence est faite en HTML CSS le Javascript le back end est fait dans des classes PHP dans un systeme MVC
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">CSS3</h4>
+                                    <span class="skill-level-badge level-confirmed">Avancé</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Intégration responsive complète, Flexbox, CSS Grid, animations fluides, variables personnalisées et respect des maquettes.
                                 </p>
                             </div>
                         </div>
 
-                    </div>
-
-                </div>
-                <div id="professionel" class="projets_global swiper">
-                    <div class="swiper-wrapper">
-
-                        <!-- //////////////////////projet1 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proproj1.png" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">HTML/CSS/JS</span>
-                                <h1 class="projet_title">Site web Association boxing club de brignais </h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openASB()">
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/javascript-1.svg" alt="Logo JavaScript" class="skill-icon">
                             </div>
-                        </div>
-                        <!-- ////////////////////////projet2 /////////////////////////////////////-->
-                        <div class="projet swiper-slide">
-                            <img src="image/proj5.png" alt="projet image" class="projet_img">
-
-                            <div>
-                                <span class="projet_subtitle">WORDPRESS</span>
-                                <h1 class="projet_title">Site web Cldécoration</h1>
-
-                                <!-- <a href="#" class="projet_bouton">
-                                    voir le site <i class="ri-arrow-right-line"></i></i>
-                                </a> -->
-                                <button class="projet_bouton" onclick="openCLdeco()">
-                                    <!-- mettre le lein -->
-                                    voir le site <i class="ri-arrow-right-line"></i>
-                                </button>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">JavaScript</h4>
+                                    <span class="skill-level-badge level-intermediate">Intermédiaire</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Manipulation dynamique du DOM, programmation événementielle, requêtes asynchrones (Fetch/AJAX) et carrousels interactifs.
+                                </p>
                             </div>
                         </div>
 
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/react.svg" alt="Logo React" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">React</h4>
+                                    <span class="skill-level-badge level-intermediate">Intermédiaire</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Développement d'interfaces modulaires en composants réutilisables, gestion de l'état (Hooks), props et applications interactives.
+                                </p>
+                            </div>
+                        </div>
 
-                    </div>
-
-
-
-                    <!-- ////bouton//// -->
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-s-line"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-s-line"></i>
-                    </div>
-                    <!-- ////pagination//// -->
-                    <div class="swiper-pagination">
-
-                    </div>
-
-
-
-                    <div class="demo-container">
-
-
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/angular.svg" alt="Logo Angular" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">Angular</h4>
+                                    <span class="skill-level-badge level-learning">Pratique</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Architecture TypeScript orientée composants, directives, injection de dépendances, services HTTP et formulaires.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="demo-container">
-                    <div class="demo" id="CLdeco-Demo">
-                        <button class="demo-close" id="close-CLdeco-Demo" onclick="getElementById('CLdeco-Demo').style.display = 'none'"><i class="ri-close-line"></i></button>
-                        <div class="demo-img">
 
-                            <img src="image/demo/clDemo.gif" alt="">
-
+                <!-- Catégorie 2 : Back-End, Bases de Données & CMS -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">
+                        <i class="ri-database-2-line"></i>
+                        <span>Back-End, Bases de Données & CMS</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/php-1.svg" alt="Logo PHP" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">PHP</h4>
+                                    <span class="skill-level-badge level-intermediate">Intermédiaire</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Développement back-end dynamique, architecture MVC, formulaires sécurisés, gestion de sessions et logique serveur.
+                                </p>
+                            </div>
                         </div>
-                        <div class="demo-text">
-                            <a href="">voir le site</a>
 
-                            <p>
-                                Ce site est un projet scolaire qui visait à créer une application web en php html css pour commander un véhicule a uen agence .
-                                <br/>le projet ce concentre sur une base de donnée ou l'on puise toutes les informations des véhicules et dans laquel on implemente celle du client
-                                <br/>l application nous force a nous crer un compte ou nous connecter pour acceder a la page de commande une fois fais cette dernière est enregistré
-                                <br/> dans une table de la base de donnée supprimant un véhicule disponible, une fois la commande faite un récapitulatif vous est affiché
-                                <br/> l'aparence est faite en HTML CSS le Javascript le back end est fait dans des classes PHP dans un systeme MVC
-                            </p>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/sql.svg" alt="Logo SQL" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">SQL</h4>
+                                    <span class="skill-level-badge level-intermediate">Intermédiaire</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Conception et modélisation de bases relationnelles (MySQL), requêtes CRUD, jointures complexes et persistance des données.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/wordpress.svg" alt="Logo WordPress" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">WordPress</h4>
+                                    <span class="skill-level-badge level-confirmed">Confirmé</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Création et personnalisation de sites vitrines sur-mesure, intégration de thèmes, gestion d'extensions et administration de contenus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie 3 : Design & Création Graphique (UI / UX) -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">
+                        <i class="ri-paint-brush-line"></i>
+                        <span>Design & Création Graphique (UI / UX)</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/figma.svg" alt="Logo Figma" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">Figma</h4>
+                                    <span class="skill-level-badge level-confirmed">Avancé</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Wireframing, maquettage haute fidélité, design systems, prototypage interactif, auto-layout et design responsive.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/photoshop-cc-4.svg" alt="Logo Adobe Photoshop" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">Photoshop</h4>
+                                    <span class="skill-level-badge level-intermediate">Intermédiaire</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Retouche d'images, composition visuelle, détourage précis et création d'éléments graphiques pour le web.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/premiere-cc.svg" alt="Logo Adobe Premiere Pro" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">Premiere Pro</h4>
+                                    <span class="skill-level-badge level-learning">Pratique</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Montage vidéo dynamique, titrage, transitions, synchronisation audio et exports de formats optimisés pour le web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie 4 : Intelligence Artificielle & Productivité -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">
+                        <i class="ri-sparkling-2-line"></i>
+                        <span>Intelligence Artificielle & Productivité</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/gemini.svg" alt="Logo Google Gemini" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">Gemini</h4>
+                                    <span class="skill-level-badge level-confirmed">Maîtrise</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Utilisation pour l'accélération du développement frontend/backend, l'automatisation, le prompt engineering et l'assistance à la conception.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon-wrap">
+                                <img src="logo/claude.svg" alt="Logo Anthropic Claude" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-header">
+                                    <h4 class="skill-name">Claude</h4>
+                                    <span class="skill-level-badge level-confirmed">Maîtrise</span>
+                                </div>
+                                <p class="skill-desc">
+                                    Architecture logicielle assistée par IA, refactoring approfondi de code, revue critique et résolution de problèmes complexes.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+        </section>
 
-
+        <!-- ==================== SECTION RÉALISATIONS / PROJETS ==================== -->
+        <section id="realisation" class="section">
+            <div class="section-header">
+                <span class="section-tag">TRAVAUX</span>
+                <h2 class="section-title">Mes Réalisations</h2>
+                <div class="section-divider"></div>
             </div>
 
-            </div>
-        </article>
-
-
-
-
-        <article id="Contact">
-            <div class="article-head">
-                <h6>___________</h6>
-                <div class="titre-article">
-                    <div>
-                        <h6 class="head-titre">CONTACT</h6>
-                    </div>
-
-                    <div>
-                        <h2>ME CONTACTER</h2>
-                    </div>
-                </div>
-                <h6 class="barre">___________</h6>
-
+            <!-- Filtres des projets -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="pro">Projets professionnels</button>
+                <button class="filter-btn" data-filter="etude">Projets d'études</button>
             </div>
 
-            <div class="contact_container">
-                <div class="contact">
+            <!-- Grille des projets -->
+            <div class="projects-container">
 
-
-                    <div class="contact_data">
-                        <span class="contact_info_title">Whatsapp</span>
-                        <span class="contact_info_data"></br>M'écrire <a href="https://api.whatsapp.com/send/?phone=33616906927&text=Bonjour+bienvenue+%0A&type=phone_number&app_absent=0"><i class="ri-arrow-right-line"></i></a></span>
-                    </div>
-                    <div class="contact_info">
-                        <div class="contact_data">
-                            <span class="contact_info_title">Email</span>
-                            <span class="contact_info_data"></br>mathis.carre73100@gmail.com</span>
+                <!-- PROJET 1 (Professionnel) : Boxing Club de Brignais -->
+                <div class="project-card" data-category="pro">
+                    <div class="project-img-wrapper">
+                        <img src="image/proproj1.png" alt="Aperçu du site de l'Association Boxing Club de Brignais" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://association-boxing-club-brignais.fr/" target="_blank" rel="noopener noreferrer" class="btn-project-preview">
+                                <i class="ri-external-link-line"></i> Visiter le site
+                            </a>
                         </div>
                     </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-pro">Professionnel</span>
+                            <span class="tag">HTML5 / CSS3 / JS</span>
+                        </div>
+                        <h3 class="project-title">Association Boxing Club de Brignais</h3>
+                        <p class="project-desc">
+                            Site vitrine officiel de l'association de boxe de Brignais, conçu pour présenter les disciplines, les horaires d'entraînement, la grille tarifaire et les actualités du club.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://association-boxing-club-brignais.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <span>Visiter le site</span>
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                    <div>
-                        <form action="" class="contact_form" id="contact_form">
-                            <div class="contact_form-div">
-                                <label class="contact_form-tag">Nom</label>
-                                <input type="text" name="user_name" required placeholder="Votre nom" class="contact_form-input" id="contact_name">
-                            </div>
-                            <div class="contact_form-div">
-                                <label class="contact_form-tag">Mail</label>
-                                <input type="email" name="user_email" required placeholder="Votre email" class="contact_form-input" id="contact_email">
-                            </div>
-                            <div class="contact_form-div contact_form-area">
-                                <label class="contact_form-tag">Sujet</label>
-                                <textarea name="user_subject" class="contact_form-input" placeholder="Votre message" id="contact-subject"></textarea>
-                            </div>
-                            <p class="contact-message" id="contact-message"></p>
-                            <button class="contact_button" type="submit">
-                                Envoyer
+                <!-- PROJET 2 (Professionnel) : CLdécoration -->
+                <div class="project-card" data-category="pro">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj5.png" alt="Aperçu du site Cldécoration" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('CLdeco-Demo')">
+                                <i class="ri-eye-line"></i> Voir les détails
                             </button>
-                        </form>
+                        </div>
                     </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-pro">Professionnel</span>
+                            <span class="tag">WordPress / CMS</span>
+                        </div>
+                        <h3 class="project-title">Site Web CLdécoration</h3>
+                        <p class="project-desc">
+                            Site vitrine sur-mesure créé sous WordPress pour une décoratrice d'intérieur, mettant en valeur son univers artistique, ses prestations et ses chantiers réalisés.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('CLdeco-Demo')">
+                                <span>Détails & Démo</span>
+                                <i class="ri-information-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- PROJET 3 (Étude) : Exposition Antoni Gaudí -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj1.PNG" alt="Aperçu du site Exposition Antoni Gaudí" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('demo-Gaodi')">
+                                <i class="ri-eye-line"></i> Démonstration
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet d'étude</span>
+                            <span class="tag">HTML / CSS / JS</span>
+                        </div>
+                        <h3 class="project-title">Exposition Antoni Gaudí</h3>
+                        <p class="project-desc">
+                            Site événementiel immersif présentant l'œuvre de l'architecte Antoni Gaudí, avec arrière-plan vidéo, biographie dépliable, galerie dynamique et billetterie.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('demo-Gaodi')">
+                                <span>Démonstration</span>
+                                <i class="ri-play-circle-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 4 (Étude) : Exposition Alain Le Foll -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj2.PNG" alt="Aperçu du site Exposition Alain Le Foll" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('demo-leFoll')">
+                                <i class="ri-eye-line"></i> Démonstration
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet d'étude</span>
+                            <span class="tag">HTML / CSS / JS</span>
+                        </div>
+                        <h3 class="project-title">Exposition Alain Le Foll</h3>
+                        <p class="project-desc">
+                            Site rétrospectif responsive dédié à l'artiste Alain Le Foll, incluant une navigation fixe, une biographie détaillée, une critique d'art et un panorama d'œuvres aléatoires.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('demo-leFoll')">
+                                <span>Démonstration</span>
+                                <i class="ri-play-circle-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 5 (Étude) : Le Juste Prix -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj3.PNG" alt="Aperçu du jeu Juste Prix" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('JP-Demo')">
+                                <i class="ri-eye-line"></i> Démonstration
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet d'étude</span>
+                            <span class="tag">JavaScript Vanilla</span>
+                        </div>
+                        <h3 class="project-title">Jeu du Juste Prix</h3>
+                        <p class="project-desc">
+                            Jeu web interactif recréant les règles du Juste Prix. Propose un mode solo à plusieurs difficultés et un mode multijoueur (2 joueurs) en tour par tour.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('JP-Demo')">
+                                <span>Démonstration</span>
+                                <i class="ri-play-circle-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 6 (Étude) : Gestion des Flux d'un Musée -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj4.PNG" alt="Aperçu du système de gestion de musée" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('demo-siteDynamique')">
+                                <i class="ri-eye-line"></i> Démonstration
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet d'étude</span>
+                            <span class="tag">PHP / MySQL</span>
+                        </div>
+                        <h3 class="project-title">Gestion des Visiteurs de Musée</h3>
+                        <p class="project-desc">
+                            Plateforme dynamique permettant de réguler les entrées/sorties de visiteurs en temps réel pour respecter la jauge maximale, avec module de statistiques d'affluence.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('demo-siteDynamique')">
+                                <span>Démonstration</span>
+                                <i class="ri-play-circle-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 7 (Étude) : Plateforme de Réservation de Véhicules -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj6.png" alt="Aperçu de l'application de location de véhicules" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('Eco-Demo')">
+                                <i class="ri-eye-line"></i> Démonstration
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet d'étude</span>
+                            <span class="tag">PHP MVC / SQL</span>
+                        </div>
+                        <h3 class="project-title">Application Éco-Location</h3>
+                        <p class="project-desc">
+                            Application web de commande et réservation de véhicules pour une agence. Gestion de comptes clients, catalogue avec disponibilité des véhicules et architecture MVC.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('Eco-Demo')">
+                                <span>Démonstration</span>
+                                <i class="ri-play-circle-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 8 (Étude) : Suivi des Entrées & Statistiques -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj7.png" alt="Aperçu du système de suivi et statistiques de tickets" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn-project-preview" onclick="openDemo('demoMuse')">
+                                <i class="ri-eye-line"></i> Démonstration
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet d'étude</span>
+                            <span class="tag">PHP / SQL / Stats</span>
+                        </div>
+                        <h3 class="project-title">Suivi des Tickets & Statistiques</h3>
+                        <p class="project-desc">
+                            Interface de billetterie locale permettant d'enregistrer les arrivées, de clôturer les tickets au départ et de visualiser les ratios de fréquentation sous forme de statistiques.
+                        </p>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openDemo('demoMuse')">
+                                <span>Démonstration</span>
+                                <i class="ri-play-circle-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== MODALES DE DÉMONSTRATION (LIGHTBOX) ==================== -->
+        <div id="modalContainer" class="modal-container">
+
+            <!-- MODALE 1 : Exposition Alain Le Foll -->
+            <div class="modal-dialog" id="demo-leFoll">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('demo-leFoll')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/demo/lefollDemo.gif" alt="Démonstration du site Alain Le Foll" class="modal-gif">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet d'étude • HTML / CSS / JS</span>
+                            <h3 class="modal-title">Site web de l'exposition Alain Le Foll</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Ce projet scolaire avait pour objectif de concevoir un site web statique, responsive et immersif dédié à une exposition rétrospective de l'artiste <strong>Alain Le Foll</strong>.
+                                </p>
+                                <p>
+                                    Le site se compose de plusieurs rubriques :
+                                </p>
+                                <ul>
+                                    <li><strong>Exposition :</strong> une présentation courte enrichie d'une vidéo documentaire.</li>
+                                    <li><strong>Biographie :</strong> le parcours artistique et biographique de l'auteur.</li>
+                                    <li><strong>Critique d'art :</strong> une analyse critique de son œuvre avec support vidéo.</li>
+                                    <li><strong>Galerie d'œuvres :</strong> un panorama aléatoire affichant 6 tableaux parmi 12 œuvres disponibles via JavaScript.</li>
+                                    <li><strong>Informations pratiques :</strong> horaires d'ouverture, tarifs et localisation géographique.</li>
+                                </ul>
+                                <p>
+                                    La navigation reste fixée en haut de page lors du défilement. L'ensemble a été réalisé en <strong>HTML5, CSS3 et JavaScript vanilla</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </article>
-
-        <footer class="footer">
-            <div>
-                <h1>Mathis CARRÉ</h1>
-                <p>Web Develloper</p>
-
-                <ul class="footer_list">
-                    <li>
-                        <a href="#header" class="footer_link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#competence" class="footer_link">compétences</a>
-                    </li>
-                    <li>
-                        <a href="#realisation" class="footer_link">réalisation</a>
-                    </li>
-                </ul>
-                <ul class="footer_social">
-                    <li>
-                        <a href="https://www.linkedin.com/in/mathis-carr%C3%A9-941028234/" target="_blank" class="social_link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/" target="_blank" class="social_link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </li>
-                </ul>
-                <span class="copy">
-                    &#169;Copyright.2023 Mathis Carré, Tous droits réservés.
-                </span>
-
+            <!-- MODALE 2 : Exposition Antoni Gaudí -->
+            <div class="modal-dialog" id="demo-Gaodi">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('demo-Gaodi')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/demo/gaudiDemo.gif" alt="Démonstration du site Antoni Gaudí" class="modal-gif">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet d'étude • HTML / CSS / JS</span>
+                            <h3 class="modal-title">Site web de l'exposition Antoni Gaudí</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Ce projet avait pour vocation de concevoir une expérience web complète autour de l'illustre architecte catalan <strong>Antoni Gaudí</strong>.
+                                </p>
+                                <p>
+                                    Fonctionnalités majeures développées :
+                                </p>
+                                <ul>
+                                    <li><strong>Header dynamique :</strong> vidéo d'ambiance en arrière-plan et bouton de défilement fluide.</li>
+                                    <li><strong>Navigation intelligente :</strong> barre de navigation adaptative avec passage en menu burger sur écran mobile (&lt; 750px) et bouton de retour en haut.</li>
+                                    <li><strong>Biographie interactive :</strong> présentation chronologique détaillée avec boutons de déploiement progressif.</li>
+                                    <li><strong>Galerie d'œuvres :</strong> affichage aléatoire de 9 chefs-d'œuvre parmi 18 réalisations de Gaudí.</li>
+                                    <li><strong>Informations pratiques & Billetterie :</strong> carte interactive Google Maps, grille tarifaire et liens de réservation.</li>
+                                </ul>
+                                <p>
+                                    Le projet intègre également une gestion de consentement aux cookies et diverses animations JavaScript.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- MODALE 3 : Suivi des Entrées / Musée -->
+            <div class="modal-dialog" id="demoMuse">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('demoMuse')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/demo/museDemo.gif" alt="Démonstration du suivi des entrées du musée" class="modal-gif">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet d'étude • PHP / MySQL</span>
+                            <h3 class="modal-title">Gestion des flux et des entrées de musée</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Ce projet scolaire vise à assurer la gestion et la traçabilité des flux de visiteurs au sein d'un établissement culturel grâce à une application web locale.
+                                </p>
+                                <ul>
+                                    <li><strong>Tableau de bord d'accueil :</strong> affiche en temps réel la liste des visiteurs présents dans le musée n'ayant pas encore d'heure de sortie enregistrée.</li>
+                                    <li><strong>Entrée ticket :</strong> enregistrement d'un nouveau visiteur avec horodatage et injection dans la base de données SQL.</li>
+                                    <li><strong>Sortie ticket :</strong> clôture de la visite avec calcul de la durée de présence.</li>
+                                    <li><strong>Statistiques :</strong> visualisation sous forme de pourcentages et de totaux de la fréquentation du musée.</li>
+                                </ul>
+                                <p>
+                                    L'architecture repose sur du <strong>PHP</strong> pour le traitement serveur et <strong>HTML/CSS</strong> pour l'interface de contrôle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </footer>
+            <!-- MODALE 4 : Gestion des œuvres et clients (Site Dynamique) -->
+            <div class="modal-dialog" id="demo-siteDynamique">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('demo-siteDynamique')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/demo/dynamiqueDemo.gif" alt="Démonstration du site web dynamique" class="modal-gif">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet d'étude • PHP / SQL / CSS</span>
+                            <h3 class="modal-title">Système de gestion d'exposition & régulation des visiteurs</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Conception d'une application web dynamique et responsive répondant à un double besoin de gestion : le catalogue des œuvres exposées et le respect strict d'une jauge de sécurité fixée à 50 personnes simultanées dans le bâtiment.
+                                </p>
+                                <ul>
+                                    <li><strong>Catalogue d'œuvres :</strong> consultation détaillée (visuel, titre, période historique, description) et formulaire d'ajout pour enrichir la base de données.</li>
+                                    <li><strong>Module de régulation :</strong> contrôle automatique du seuil maximal de 50 visiteurs avant d'autoriser une nouvelle entrée.</li>
+                                    <li><strong>Statistiques d'affluence :</strong> synthèse des données de fréquentation pour l'équipe organisatrice.</li>
+                                </ul>
+                                <p>
+                                    Application articulée autour de 5 pages interconnectées en <strong>PHP</strong> avec persistance des données sous <strong>MySQL</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </section>
+            <!-- MODALE 5 : Le Juste Prix -->
+            <div class="modal-dialog" id="JP-Demo">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('JP-Demo')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/demo/justeprixDemo.gif" alt="Démonstration du jeu Le Juste Prix" class="modal-gif">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet d'étude • JavaScript Vanilla</span>
+                            <h3 class="modal-title">Le Juste Prix en JavaScript</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Reproduction interactive du célèbre jeu télévisé « Le Juste Prix », entièrement développée en JavaScript natif sans bibliothèque tierce.
+                                </p>
+                                <ul>
+                                    <li><strong>Mode Solo :</strong> 3 paliers de difficulté ajustant le nombre d'essais alloués et la fourchette de prix à deviner (indices « C'est plus ! » ou « C'est moins ! »).</li>
+                                    <li><strong>Mode 2 Joueurs :</strong>
+                                        <br>• Variante 1 : un joueur définit secrètement le prix, le second tente de le deviner dans un nombre de coups limité.
+                                        <br>• Variante 2 (Versus) : confrontation en face-à-face où les deux joueurs proposent tour à tour un montant pour remporter la manche.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Gestion des scores, chronomètres et animations d'interface coordonnées via des fonctions modulaires en JavaScript.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/email.js"></script>
+            <!-- MODALE 6 : Éco-Location de Véhicules -->
+            <div class="modal-dialog" id="Eco-Demo">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('Eco-Demo')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/demo/ecoDemo.gif" alt="Démonstration de l'application Éco-Location" class="modal-gif">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet d'étude • PHP (Architecture MVC) / MySQL</span>
+                            <h3 class="modal-title">Application de réservation de véhicules</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Application web complète conçue pour simuler les opérations de location d'une agence de mobilité écologique.
+                                </p>
+                                <ul>
+                                    <li><strong>Catalogue dynamique :</strong> consultation des fiches techniques des véhicules alimentées depuis une base de données MySQL.</li>
+                                    <li><strong>Espace membre :</strong> inscription sécurisée, authentification avec hachage des mots de passe et gestion de session.</li>
+                                    <li><strong>Tunnel de réservation :</strong> sélection des dates, décrémentation automatique des véhicules disponibles en stock et génération d'un bon récapitulatif.</li>
+                                    <li><strong>Architecture MVC :</strong> séparation claire entre la logique métier (modèles PHP orientés objet), les vues HTML/CSS et les contrôleurs.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODALE 7 : CLdécoration (Projet Professionnel) -->
+            <div class="modal-dialog" id="CLdeco-Demo">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('CLdeco-Demo')" aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/proj5.png" alt="Aperçu du site CLdécoration" class="modal-gif modal-static-img">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet Professionnel • WordPress / CMS</span>
+                            <h3 class="modal-title">Site Web Vitrine CLdécoration</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Conception et réalisation d'un site vitrine élégant et personnalisé pour une entreprise indépendante de décoration d'intérieur et d'aménagement d'espaces.
+                                </p>
+                                <ul>
+                                    <li><strong>Valorisation visuelle :</strong> intégration d'une identité graphique épurée et raffinée, en accord avec l'univers de la décoration.</li>
+                                    <li><strong>Galerie de chantiers :</strong> mise en avant des réalisations antérieures avec photographies haute définition avant/après.</li>
+                                    <li><strong>Présentation des prestations :</strong> fiches détaillées (conseil en aménagement, home staging, suivi de projet).</li>
+                                    <li><strong>Formulaire de devis en ligne :</strong> recueil structuré des besoins des prospects avec notification automatique par email.</li>
+                                    <li><strong>Gestion autonome :</strong> interface WordPress intuitive permettant à la cliente de mettre à jour ses chantiers en toute autonomie.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== SECTION CONTACT ==================== -->
+        <section id="Contact" class="section">
+            <div class="section-header">
+                <span class="section-tag">COMMUNICATION</span>
+                <h2 class="section-title">Me Contacter</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Coordonnées et réseaux -->
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-whatsapp-line"></i>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-title">WhatsApp</span>
+                            <span class="contact-card-data">+33 6 16 90 69 27</span>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=33616906927&text=Bonjour+Mathis%2C+je+vous+contacte+via+votre+portfolio&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                            <span>Discuter</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-title">Email</span>
+                            <span class="contact-card-data">mathis.carre73100@gmail.com</span>
+                        </div>
+                        <a href="mailto:mathis.carre73100@gmail.com" class="contact-card-link">
+                            <span>Écrire un email</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-linkedin-box-line"></i>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-title">LinkedIn</span>
+                            <span class="contact-card-data">Mathis Carré</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/mathis-carr%C3%A9-941028234/" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                            <span>Voir le profil</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="ri-github-line"></i>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-title">GitHub</span>
+                            <span class="contact-card-data">@Mathtuzo</span>
+                        </div>
+                        <a href="https://github.com/Mathtuzo" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                            <span>Voir les dépôts</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact_form">
+                        <div class="form-group">
+                            <label for="contact_name" class="form-label">Nom complet</label>
+                            <div class="input-wrapper">
+                                <i class="ri-user-line input-icon"></i>
+                                <input type="text" name="user_name" id="contact_name" required placeholder="Votre nom et prénom" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_email" class="form-label">Adresse email</label>
+                            <div class="input-wrapper">
+                                <i class="ri-at-line input-icon"></i>
+                                <input type="email" name="user_email" id="contact_email" required placeholder="votre.email@exemple.com" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Objet du message</label>
+                            <div class="input-wrapper">
+                                <i class="ri-chat-3-line input-icon"></i>
+                                <input type="text" name="user_subject" id="contact-subject" required placeholder="Proposition de poste, projet web, collaboration..." class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message-body" class="form-label">Votre message</label>
+                            <div class="input-wrapper">
+                                <i class="ri-message-3-line input-icon textarea-icon"></i>
+                                <textarea name="user_message" id="contact-message-body" required placeholder="Bonjour Mathis, je vous contacte au sujet de..." class="form-input form-textarea" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <p class="form-status-msg" id="contact-message"></p>
+
+                        <button type="submit" class="btn btn-primary btn-submit" id="contact-submit-btn">
+                            <span>Envoyer le message</span>
+                            <i class="ri-send-plane-fill"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">&lt;Mathis Carré /&gt;</span>
+                <p class="footer-subtitle">Développeur Web & Webdesigner</p>
+                <p class="footer-bio">
+                    Conception d'expériences web interactives, esthétiques et optimisées.
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#competence">Compétences</a></li>
+                    <li><a href="#realisation">Réalisations</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4 class="footer-heading">Réseaux & Liens</h4>
+                <div class="social-links-grid">
+                    <a href="https://www.linkedin.com/in/mathis-carr%C3%A9-941028234/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Profil LinkedIn">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/Mathtuzo" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Profil GitHub">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="mailto:mathis.carre73100@gmail.com" class="social-btn" aria-label="Envoyer un email">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                    <a href="Mathis_Carre.pdf" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Télécharger le CV">
+                        <i class="ri-file-pdf-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="copyright-year">2025</span> Mathis Carré. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/projet.js"></script>
-    <script src="navjs.js"></script>
+    <script src="js/email.js"></script>
     <script src="js/demo.js"></script>
-
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="js/revealscroll.js"></script>
-
-
-
+    <script src="navjs.js"></script>
 </body>
 
 </html>
