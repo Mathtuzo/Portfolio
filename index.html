@@ -47,6 +47,9 @@
     <div class="cursor" id="custom-cursor"></div>
     <div class="cursor-dot" id="cursor-dot"></div>
 
+    <!-- Effet écailles interactif -->
+    <canvas id="scales-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; opacity: 1;"></canvas>
+
     <!-- Arrière-plan dynamique / Glow orbs -->
     <div class="ambient-glow glow-1"></div>
     <div class="ambient-glow glow-2"></div>
@@ -1216,6 +1219,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/email.js"></script>
     <script src="js/demo.js"></script>
+    <script src="js/scales.js"></script>
     <script src="navjs.js"></script>
 </body>
 
