@@ -96,4 +96,6 @@ function openSiteDyn() { openDemo('demo-siteDynamique'); }
 function openEco() { openDemo('Eco-Demo'); }
 function openMuse() { openDemo('demoMuse'); }
 function openCLdeco() { openDemo('CLdeco-Demo'); }
+function openNetflux() { openDemo('netflux-Demo'); }
+function openPardawan() { openDemo('pardawan-Demo'); }
 function openASB() { window.open('https://association-boxing-club-brignais.fr/', '_blank'); }

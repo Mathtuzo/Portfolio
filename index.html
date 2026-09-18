@@ -89,7 +89,7 @@
 
             <div class="hero-stats">
                 <div class="stat-card">
-                    <span class="stat-number">+7</span>
+                    <span class="stat-number">+9</span>
                     <span class="stat-label">Projets Réalisés</span>
                 </div>
                 <div class="stat-card">
@@ -503,7 +503,7 @@
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">Tous les projets</button>
                 <button class="filter-btn" data-filter="pro">Projets professionnels</button>
-                <button class="filter-btn" data-filter="etude">Projets d'études</button>
+                <button class="filter-btn" data-filter="etude">Projets d'études &amp; POE</button>
             </div>
 
             <!-- Grille des projets -->
@@ -570,7 +570,79 @@
                     </div>
                 </div>
 
-                <!-- PROJET 3 (Étude) : Exposition Antoni Gaudí -->
+                <!-- PROJET 3 (Professionnel) : ParDawan -->
+                <div class="project-card" data-category="pro">
+                    <div class="project-img-wrapper">
+                        <img src="image/projpro2.png" alt="Aperçu du site de l'école ParDawan"
+                            class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://pardawan.com/#/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-preview">
+                                <i class="ri-external-link-line"></i> Visiter le site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-pro">Professionnel</span>
+                            <span class="tag">Angular / Tailwind</span>
+                            <span class="tag">Maintenance & Git</span>
+                        </div>
+                        <h3 class="project-title">ParDawan — École & Formations</h3>
+                        <p class="project-desc">
+                            Site officiel de l'école ParDawan, centre de formations en alternance (titres RNCP). Chargé de l'entretien continu du site et de la maintenance technique, ainsi que de l'assainissement et la rationalisation des branches du projet.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://pardawan.com/#/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-outline">
+                                <span>Visiter le site</span>
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                            <button class="btn btn-outline" onclick="openDemo('pardawan-Demo')" aria-label="Voir les détails du projet ParDawan">
+                                <span>Détails & Démo</span>
+                                <i class="ri-information-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 4 (POE / Collaboration) : Netflux -->
+                <div class="project-card" data-category="etude">
+                    <div class="project-img-wrapper">
+                        <img src="image/proj8.png" alt="Aperçu de la plateforme de streaming Netflux"
+                            class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://netflux-nu.vercel.app/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-preview">
+                                <i class="ri-external-link-line"></i> Visiter le site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-etude">Projet POE • Collaboration</span>
+                            <span class="tag">React 19 / Vite</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <h3 class="project-title">Netflux — Interface de Plateforme de Streaming</h3>
+                        <p class="project-desc">
+                            Interface d'une plateforme de streaming réalisée en collaboration dans le cadre de la POE. Inspirée de plusieurs plateformes de streaming majeures, elle intègre l'authentification Firebase, une base de données Firestore, la gestion des listes de favoris et des carrousels dynamiques.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://netflux-nu.vercel.app/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-outline">
+                                <span>Visiter le site</span>
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                            <button class="btn btn-outline" onclick="openDemo('netflux-Demo')" aria-label="Voir les détails du projet Netflux">
+                                <span>Détails & Démo</span>
+                                <i class="ri-information-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 5 (Étude) : Exposition Antoni Gaudí -->
                 <div class="project-card" data-category="etude">
                     <div class="project-img-wrapper">
                         <img src="image/proj1.PNG" alt="Aperçu du site Exposition Antoni Gaudí" class="project-img">
@@ -599,7 +671,7 @@
                     </div>
                 </div>
 
-                <!-- PROJET 4 (Étude) : Exposition Alain Le Foll -->
+                <!-- PROJET 6 (Étude) : Exposition Alain Le Foll -->
                 <div class="project-card" data-category="etude">
                     <div class="project-img-wrapper">
                         <img src="image/proj2.PNG" alt="Aperçu du site Exposition Alain Le Foll" class="project-img">
@@ -628,7 +700,7 @@
                     </div>
                 </div>
 
-                <!-- PROJET 5 (Étude) : Le Juste Prix -->
+                <!-- PROJET 7 (Étude) : Le Juste Prix -->
                 <div class="project-card" data-category="etude">
                     <div class="project-img-wrapper">
                         <img src="image/proj3.PNG" alt="Aperçu du jeu Juste Prix" class="project-img">
@@ -657,7 +729,7 @@
                     </div>
                 </div>
 
-                <!-- PROJET 6 (Étude) : Gestion des Flux d'un Musée -->
+                <!-- PROJET 8 (Étude) : Gestion des Flux d'un Musée -->
                 <div class="project-card" data-category="etude">
                     <div class="project-img-wrapper">
                         <img src="image/proj4.PNG" alt="Aperçu du système de gestion de musée" class="project-img">
@@ -686,7 +758,7 @@
                     </div>
                 </div>
 
-                <!-- PROJET 7 (Étude) : Plateforme de Réservation de Véhicules -->
+                <!-- PROJET 9 (Étude) : Plateforme de Réservation de Véhicules -->
                 <div class="project-card" data-category="etude">
                     <div class="project-img-wrapper">
                         <img src="image/proj6.png" alt="Aperçu de l'application de location de véhicules"
@@ -716,7 +788,7 @@
                     </div>
                 </div>
 
-                <!-- PROJET 8 (Étude) : Suivi des Entrées & Statistiques -->
+                <!-- PROJET 10 (Étude) : Suivi des Entrées & Statistiques -->
                 <div class="project-card" data-category="etude">
                     <div class="project-img-wrapper">
                         <img src="image/proj7.png" alt="Aperçu du système de suivi et statistiques de tickets"
@@ -1034,6 +1106,82 @@
                                     <li><strong>Gestion autonome :</strong> interface WordPress intuitive permettant à
                                         la cliente de mettre à jour ses chantiers en toute autonomie.</li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODALE 8 : Netflux (Projet POE / Collaboration) -->
+            <div class="modal-dialog" id="netflux-Demo">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('netflux-Demo')"
+                        aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/proj8.png" alt="Aperçu de l'application Netflux"
+                                class="modal-gif modal-static-img">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet POE • En collaboration • React 19 / Vite / Firebase</span>
+                            <h3 class="modal-title">Netflux — Plateforme de Streaming Vidéo</h3>
+                            <div class="modal-description">
+                                <p>
+                                    Développée en collaboration dans le cadre de la <strong>POE (Préparation Opérationnelle à l'Emploi)</strong>, <strong>Netflux</strong> est l'interface d'une plateforme de streaming web conçue en équipe et inspirée de plusieurs plateformes de streaming majeures (Netflix, Prime Video, Disney+).
+                                </p>
+                                <ul>
+                                    <li><strong>Projet collaboratif (POE) :</strong> Conception et développement en synergie d'équipe, structuration modulaire des composants, intégration collective et respect des maquettes.</li>
+                                    <li><strong>Inspiration multi-plateformes :</strong> Ergonomie immersive s'inspirant des grands services de SVOD (bannière hero cinématique, carrousels thématiques, aperçu dynamique et fiches de visionnage).</li>
+                                    <li><strong>Authentification & Cloud Firestore :</strong> Inscription et connexion sécurisées via <strong>Firebase Auth</strong>, synchronisation en temps réel des listes d'utilisateurs (favoris, historique et téléchargements).</li>
+                                    <li><strong>Carrousels interactifs :</strong> Navigation fluide et responsive propulsée par <strong>Swiper</strong> pour faire défiler les affiches de films et séries par catégories.</li>
+                                    <li><strong>Fiches détaillées & Modales :</strong> Présentation complète des programmes (synopsis, bandes-annonces vidéo, sélection des épisodes par saisons, genres et casting).</li>
+                                    <li><strong>Moteur de recherche dynamique :</strong> Recherche instantanée de contenus en direct avec autocomplétion et filtres de sélection.</li>
+                                </ul>
+                                <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                    <a href="https://netflux-nu.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="ri-external-link-line"></i>
+                                        <span>Tester Netflux en direct</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODALE 9 : ParDawan (Projet Professionnel) -->
+            <div class="modal-dialog" id="pardawan-Demo">
+                <div class="modal-card">
+                    <button class="modal-close" onclick="closeDemo('pardawan-Demo')"
+                        aria-label="Fermer la boîte de dialogue">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-grid">
+                        <div class="modal-media">
+                            <img src="image/projpro2.png" alt="Aperçu du site de l'école ParDawan"
+                                class="modal-gif modal-static-img">
+                        </div>
+                        <div class="modal-details">
+                            <span class="modal-badge">Projet Professionnel • Angular / Tailwind CSS / Git</span>
+                            <h3 class="modal-title">ParDawan — Plateforme Web & Formations du Numérique</h3>
+                            <div class="modal-description">
+                                <p>
+                                    <strong>ParDawan</strong> est un établissement d'enseignement et centre de formation en alternance proposant des cursus certifiés par l'État (titres RNCP) dans les domaines du développement web, des infrastructures réseaux, de la cybersécurité et du design UI/UX.
+                                </p>
+                                <ul>
+                                    <li><strong>Entretien & Maintenance du site :</strong> Chargé de l'entretien continu du site, du suivi technique régulier, des corrections d'anomalies et du maintien de la qualité de service de la plateforme.</li>
+                                    <li><strong>Assainissement des branches du projet :</strong> Travail approfondi d'assainissement et de rationalisation des branches Git du dépôt, suppression des branches obsolètes, résolution de conflits de fusion et fiabilisation des versions.</li>
+                                    <li><strong>Stack technique moderne :</strong> Application monopage (SPA) développée sous <strong>Angular</strong> avec la bibliothèque de composants <strong>Angular Material</strong> et une mise en page fluide avec <strong>Tailwind CSS</strong>.</li>
+                                    <li><strong>Parcours utilisateurs & Recrutement :</strong> Catalogue complet des formations diplomantes, formulaires d'admission en ligne pour les étudiants et module de dépôt d'offres d'alternance pour les entreprises partenaires.</li>
+                                </ul>
+                                <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                    <a href="https://pardawan.com/#/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="ri-external-link-line"></i>
+                                        <span>Visiter le site ParDawan</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
